@@ -14,7 +14,8 @@ namespace ConsoleUI
             foreach (var i in carManger.GetAll())
             {
                 Console.WriteLine(i.Description);
-                
+                Console.WriteLine(" ");
+
 
             }
 
