@@ -16,6 +16,11 @@ namespace Business.Concrete
             _carDal = carDal;
         }
 
+        public List<Car> GetAlByCategoryId(int id)
+        {
+            return _carDal.GetAll(c => c.CarId == id);
+        }
+
         public List<Car> GetAll()
         {
             return _carDal.GetAll();
